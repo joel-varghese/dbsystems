@@ -1,4 +1,4 @@
-import { ItemEntity } from "@/entites/item";
+import { ItemEntity } from "@/entities/item";
 import { AuthenticationError, itemToDto } from "./utils";
 import { GetUser, UpdateItem, GetItem, ItemDto } from "./types";
 

@@ -1,4 +1,4 @@
-import { ItemEntity } from "@/entites/item";
+import { ItemEntity } from "@/entities/item";
 import { CreateItemDto, ItemDto } from "./types";
 
 export class ValidationError extends Error {

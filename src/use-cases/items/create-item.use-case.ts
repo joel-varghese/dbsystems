@@ -1,4 +1,4 @@
-import { ItemEntity, ItemEntityValidationError } from "@/entites/item";
+import { ItemEntity, ItemEntityValidationError } from "@/entities/item";
 import {
   AuthenticationError,
   itemToDto,

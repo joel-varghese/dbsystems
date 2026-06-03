@@ -1,7 +1,11 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import * as schema from "./schema";
 import { PostgresJsDatabase, drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 
+console.log("DATABASE_URL =", process.env.DATABASE_URL);
 declare global {
   // eslint-disable-next-line no-var -- only var works here
   var db: PostgresJsDatabase<typeof schema> | undefined;

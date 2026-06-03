@@ -71,4 +71,9 @@ export const items = pgTable("items", {
   isLow: boolean("isLow").notNull().default(false),
 });
 
+export const counts = pgTable("counts", {
+  id: serial("id").primaryKey(),
+  count: integer("count").notNull().default(0),
+})
+
 export type Item = typeof items.$inferSelect;
